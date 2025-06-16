@@ -1,0 +1,162 @@
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --primary: #e91e63;
+  --white: #fff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #eee;
+  --primary: #bb86fc;
+  --white: #1e1e1e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-links a, #toggle-dark {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.highlight {
+  color: var(--primary);
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #c2185b;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project {
+  background: var(--white);
+  padding: 1rem;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.filter-buttons {
+  margin: 1rem 0;
+}
+
+.filter-buttons button {
+  margin: 0 0.3rem;
+  background: #555;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+
+a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #e91e63;
+  color: white;
+  border-radius: 5px;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+a:hover {
+  background: #c2185b;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;           /* Cover entire screen */
+  background-position: center;      /* Center the image */
+  background-repeat: no-repeat;     /* Don’t repeat */
+  background-attachment: fixed;     /* Parallax effect */
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
